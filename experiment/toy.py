@@ -26,7 +26,7 @@ def run(n, gen, figpos, xlabel, ylabel, xlo, xhi, ylo, yhi):
 	obs = gen(n)
 
 	s = SPN(3, 1, SPNParams(mvmaxscope=0))
-	s.update(obs)
+	s.update(obs, False) #s.update(obs)
 	s.display()
 
 	ells = []
